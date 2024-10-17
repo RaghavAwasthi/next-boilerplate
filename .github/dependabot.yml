@@ -1,0 +1,10 @@
+
+version: 2
+updates:
+  # Keep npm dependencies up-to-date
+  - package-ecosystem: "npm"
+    directory: "/" # Location of your package.json file
+    open-pull-requests-limit: 6
+    schedule:
+      interval: "hourly"
+    rebase-strategy: "auto"
